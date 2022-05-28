@@ -1,6 +1,6 @@
 provider "aws" {
-    access_key = "AKIA52FBS5XD7CDPUZX7"
-    secret_key = "s93wXMCzlk797ACHzu+uYh/ZFIlWhNjP6jJnsnrk"
+    access_key = "" #Place your access key
+    secret_key = "" #Place your secret key
     region = "us-east-1"
 }
 resource "aws_cloudwatch_event_rule" "ec2-pending" {
