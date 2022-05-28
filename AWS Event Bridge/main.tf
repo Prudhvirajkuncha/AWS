@@ -16,11 +16,11 @@ resource "aws_cloudwatch_event_rule" "ec2-pending" {
 }
 PATTERN
 }
-#resource "aws_cloudwatch_event_target" "lambda" {
-#  rule = aws_cloudwatch_event_rule.ec2-pending.name
-#  target_id = "Ec2PendingEvent"
-#  arn = aws_lambda_function.Ec2-StateChange-Lambda.arn
-#}
-#output "arn" { 
-#  value = aws_lambda_function.Ec2-StateChange-Lambda.arn 
-#}
+/*resource "aws_cloudwatch_event_target" "lambda" {
+  rule = aws_cloudwatch_event_rule.ec2-pending.name
+  target_id = "Ec2PendingEvent"
+  arn = aws_lambda_function.Ec2-StateChange-Lambda.arn
+}
+output "arn" { 
+  value = aws_lambda_function.Ec2-StateChange-Lambda.arn 
+}
